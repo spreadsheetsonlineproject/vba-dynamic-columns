@@ -1,7 +1,19 @@
 Attribute VB_Name = "mdlStatic"
 Option Explicit
 
-Public Sub createTeacherReport()
+Public Sub createReport()
+    
+    Dim audience As String: audience = "teacher"
+    
+    Select Case audience
+        Case "teacher": Call createTeacherReport
+        Case "student": Call createStudentReport
+        Case "administrator": Call createAdministratorReport
+    End Select
+    
+End Sub
+
+Private Sub createTeacherReport()
 
     ThisWorkbook.Sheets(1).Cells(1, 1).Value = "Oktatsi_azonosito"
     ThisWorkbook.Sheets(1).Cells(1, 2).Value = "Diak_neve"
