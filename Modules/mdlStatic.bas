@@ -13,7 +13,7 @@ Public Sub createTeacherReport()
 
 End Sub
 
-Public Sub createStudentReport()
+Private Sub createStudentReport()
 
     ThisWorkbook.Sheets(1).Cells(1, 1).Value = "Oktatsi_azonosito"
     ThisWorkbook.Sheets(1).Cells(1, 2).Value = "Szuletesi_ido"
@@ -24,7 +24,7 @@ Public Sub createStudentReport()
 
 End Sub
 
-Public Sub createAdministratorReport()
+Private Sub createAdministratorReport()
 
     ThisWorkbook.Sheets(1).Cells(1, 1).Value = "Oktatsi_azonosito"
     ThisWorkbook.Sheets(1).Cells(1, 2).Value = "Szuletesi_ido"
