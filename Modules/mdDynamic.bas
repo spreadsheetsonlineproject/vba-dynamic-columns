@@ -32,7 +32,7 @@ Private Sub addHeaderItem(ByRef header_arr As Variant, ByRef header_lv As Intege
 
     ReDim Preserve header_arr(1 To header_lv)
     header_arr(header_lv) = header_text
-    header_coll.Add header_lv, header_arr(header_lv)
+    header_coll.Add header_lv, header_text
     header_lv = header_lv + 1
     
 End Sub
